@@ -25,8 +25,8 @@ function loop() {
   }
   // Animate orange circle
   if (
-    Math.sqrt((orangeX - blueX) ** 2 + (orangeX - blueY) ** 2) <
-    blueRadius + orangeRadius
+    (blueX - orangeX) ** 2 + (blueY - orangeY) ** 2 <=
+    (blueRadius + orangeRadius) ** 2
   ) {
     orangeX = Math.random() * 400;
     orangeY = Math.random() * 200;
